@@ -168,7 +168,7 @@ void displayFolderUsage(const std::string& folder) {
     std::cout << "\nTop Folder Usage (Approx.):\n";
     int count = 0;
     for (auto& f : subfolders) {
-        if (count++ >= 5) break;  // show top 5 only
+        if (count++ >= 5) break; 
         int barLength = (int)((double)f.second / subfolders[0].second * 50);
         std::cout << f.first << " [";
         for (int i = 0; i < barLength; i++) std::cout << "#";
